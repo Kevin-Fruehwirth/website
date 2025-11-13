@@ -8,37 +8,49 @@
 </head>
 
 <body>
-  <nav class="bg-gray-700 bg-opacity-60 backdrop-blur-lg shadow-lg fixed w-full top-0 left-0 z-50">
-    <div class="container mx-auto flex justify-between items-center py-3 px-8">
-      <a href="#"
-        class="text-2xl font-extrabold text-white tracking-tight hover:text-blue-600 transition-colors">About</a>
+  <nav class="bg-neutral-900/40 backdrop-blur-md backdrop-blur-lg shadow-lg fixed w-full top-0 left-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-3 px-15">
+      <span class="text-2xl font-playfair text-white tracking-tight">Kevin Frühwirth</span>
       <div class="hidden md:flex space-x-6">
-        <a href="#projects" class="text-white hover:text-blue-600 font-medium transition-colors">Projects</a>
-        <a href="#" class="text-white hover:text-blue-600 font-medium transition-colors">Skills</a>
-        <a href="#" class="text-white hover:text-blue-600 font-medium transition-colors">Life</a>
-        <a href="#" class="text-white hover:text-blue-600 font-medium transition-colors">Contact</a>
+        <a href="#projects" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Projects</a>
+        <a href="#skills" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Skills</a>
+        <a href="#life" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Life</a>
+        <a href="#contact" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Contact</a>
+        <a href="#about" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">About</a>
       </div>
       <!-- Mobile menu button -->
-      <button class="md:hidden flex items-center text-gray-700 hover:text-blue-600 focus:outline-none"
+      <button id="mobile-menu-btn" class="md:hidden flex items-center text-white hover:text-blue-600 focus:outline-none"
         aria-label="Open Menu">
         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu"
+      class="md:hidden px-8 pb-4 absolute top-full left-0 w-full bg-neutral-900/90 backdrop-blur-lg shadow-lg transition-all duration-300 opacity-0 pointer-events-none z-40">
+      <div class="flex flex-col space-y-2 py-4">
+        <a href="#projects" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Projects</a>
+        <a href="#skills" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Skills</a>
+        <a href="#life" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Life</a>
+        <a href="#contact" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Contact</a>
+        <a href="#" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">About</a>
+      </div>
+    </div>
   </nav>
   <main>
     <section class="min-h-screen flex items-center justify-center bg-cover bg-center bg-opacity-50"
       style="background-image: url('/images/polska.jpeg');">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-15 items-center">
           <!-- Column 1: Text (Left Side) -->
           <div class="flex flex-col justify-center h-full md:items-start items-center text-center md:text-left">
             <h1 class="text-4xl font-bold mb-4 text-white">Welcome to My Website</h1>
-            <p class="text-white mb-6">This is a sample website created using Tailwind CSS. It features a responsive
+            <p class="text-white text-2xl mb-6">This is a sample website created using Tailwind CSS. It features a
+              responsive
               layout with a navigation bar and a main content area.</p>
             <a href="#"
-              class="bg-gray-700 text-white px-8 py-4 rounded-lg hover:bg-gray-800 text-lg font-semibold shadow-md transition-colors w-max">Learn
+              class="bg-neutral-900/40 backdrop-blur-md text-white px-8 py-4 rounded-lg hover:bg-gray-800 text-lg font-semibold shadow-md transition-colors w-max">Learn
               More</a>
           </div>
           <!-- Column 2: Picture (Right Side) -->
@@ -49,61 +61,245 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="w-full py-12 bg-gray-700 bg-opacity-90 rounded-none">
-      <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Column 1 -->
-        <div>
-        <!-- Text row -->
-        <div class="bg-gray-500 bg-opacity-80 rounded-lg p-6 text-white shadow mb-4">
-          <h2 class="text-xl font-bold mb-2">Project Alpha</h2>
-          <p>Description for Project Alpha.</p>
-        </div>
-        <!-- Project row -->
-        <a href="project1.html" class="block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
-          <img src="/images/alpha.png" alt="Project Alpha" class="w-full h-48 object-cover">
-          <div class="p-4">
-          <h3 class="text-lg font-semibold text-white">Project Alpha</h3>
+    <section id="projects" class="w-full py-12 bg-[#231B2E] rounded-none">
+      <div class="max-w-7xl mx-auto px-15">
+        <h2 id="txtprojects" class="text-3xl mb-10 text-white text-center">Projekte</h2>
+        <div id="picprojects" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Column 1 -->
+          <div>
+            <a href="project1.html"
+              class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+              <img src="/images/Foto.jpeg" alt="Website Esperanza de Vida" class="w-full h-80 object-cover">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
+                  Website Esperanza de Vida
+                </span>
+              </div>
+            </a>
           </div>
-        </a>
-        </div>
-        <!-- Column 2 -->
-        <div>
-        <!-- Text row -->
-        <div class="bg-gray-500 bg-opacity-80 rounded-lg p-6 text-white shadow mb-4">
-          <h2 class="text-xl font-bold mb-2">Project Beta</h2>
-          <p>Description for Project Beta.</p>
-        </div>
-        <!-- Project row -->
-        <a href="project2.html" class="block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
-          <img src="/images/beta.png" alt="Project Beta" class="w-full h-48 object-cover">
-          <div class="p-4">
-          <h3 class="text-lg font-semibold text-white">Project Beta</h3>
+          <!-- Column 2 -->
+          <div>
+            <a href="project2.html"
+              class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+              <img src="/images/beta.png" alt="Projekt 2" class="w-full h-80 object-cover">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
+                  Projekt 2
+                </span>
+              </div>
+            </a>
           </div>
-        </a>
-        </div>
-        <!-- Column 3 -->
-        <div>
-        <!-- Text row -->
-        <div class="bg-gray-500 bg-opacity-80 rounded-lg p-6 text-white shadow mb-4">
-          <h2 class="text-xl font-bold mb-2">Project Gamma</h2>
-          <p>Description for Project Gamma.</p>
-        </div>
-        <!-- Project row -->
-        <a href="project3.html" class="block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
-          <img src="/images/gamma.png" alt="Project Gamma" class="w-full h-48 object-cover">
-          <div class="p-4">
-          <h3 class="text-lg font-semibold text-white">Project Gamma</h3>
+          <!-- Column 3 -->
+          <div>
+            <a href="project3.html"
+              class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+              <img src="/images/tv.jpeg" alt="Projekt 3" class="w-full h-80 object-cover scale-105 object-[right_top]"
+                style="object-position: 70% 10%;">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
+                  Projekt 3
+                </span>
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="w-full py-12 bg-[#1A1526] bg-opacity-90 rounded-none">
+      <div class="max-w-7xl mx-auto px-15">
+      <div class="grid md:grid-cols-2 md:gap-8 gap-4">
+        <!-- Left Column -->
+        <div class="flex flex-col md:gap-6 gap-4">
+        <div>
+          <span class="text-white">JavaScript</span>
+          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="80" style="width: 0%"></div>
+          </div>
+        </div>
+        <div>
+          <span class="text-white">React</span>
+          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="70" style="width: 0%"></div>
+          </div>
+        </div>
+        </div>
+        <!-- Right Column -->
+        <div class="flex flex-col md:gap-6 gap-4">
+        <div>
+          <span class="text-white">Photography</span>
+          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="90" style="width: 0%"></div>
+          </div>
+        </div>
+        <div>
+          <span class="text-white">Photography</span>
+          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="90" style="width: 0%"></div>
+          </div>
+        </div>
         </div>
       </div>
       </div>
     </section>
-    <section>
-
+    <section id="life" class="w-full py-12 bg-[#231B2E] bg-opacity-90 rounded-none">
+      <div class="max-w-7xl mx-auto px-15">
+        <h2 id="txtlife" class="text-3xl mb-10 text-white text-center">Hobbies</h2>
+        <div id="piclife" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Column 1 -->
+          <div>
+            <a href="project1.html"
+              class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+              <img src="/images/Foto.jpeg" alt="Fotografie und Reisen" class="w-full h-80 object-cover">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
+                  Fotografie und Reisen
+                </span>
+              </div>
+            </a>
+          </div>
+          <!-- Column 2 -->
+          <div>
+            <a href="project2.html"
+              class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+              <img src="/images/beta.png" alt="Kirchliches Engagement" class="w-full h-80 object-cover">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
+                  Kirchliches Engagement
+                </span>
+              </div>
+            </a>
+          </div>
+          <!-- Column 3 -->
+          <div>
+            <a href="project3.html"
+              class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+              <img src="/images/tv.jpeg" alt="Unterhaltungsmedien"
+                class="w-full h-80 object-cover scale-105 object-[right_top]" style="object-position: 70% 10%;">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
+                  Unterhaltungsmedien
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="w-full py-12 bg-[#1A1526] rounded-none">
+      <div class="max-w-7xl mx-auto px-15 text-center">
+        <h2 class="text-3xl mb-6 text-white">Contact Me</h2>
+        <p class="text-white mb-6">Feel free to reach out for collaborations or just a friendly hello!</p>
+        <form action="mailto:Kevin.fru@icloud.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto bg-neutral-800/40 backdrop-blur-md p-8 rounded-lg shadow-lg">
+          <div class="mb-4 text-left">
+            <label for="name" class="block text-white mb-2">Name</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded bg-neutral-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <div class="mb-4 text-white text-left">
+            <label for="email" class="block text-white mb-2">Email</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded bg-neutral-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <div class="mb-4 text-white text-left">
+            <label for="message" class="block text-white mb-2">Message</label>
+            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded bg-neutral-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors w-full font-semibold">Send Message</button>
+        </form>
+        <div class="mt-8">
+          <a href="mailto:Kevin.fru@icloud.com"
+            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-block">Email Me</a>
+        </div>
+      </div>
     </section>
   </main>
+
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.contains('opacity-100');
+      if (isOpen) {
+        mobileMenu.classList.remove('opacity-100');
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+      } else {
+        mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+        mobileMenu.classList.add('opacity-100');
+      }
+    });
+    // Close menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('opacity-100');
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("JS Loaded ✔"); // debug
+
+      const section = document.querySelector("#skills");
+      const skillBars = document.querySelectorAll(".skill-bar");
+
+      if (!section) {
+        console.error("❌ Section #skills not found");
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          console.log("Section visible — animating ✔");
+
+          // Fade in + slide effect
+          section.classList.remove("opacity-0", "translate-y-6");
+
+          // Animate each bar
+          skillBars.forEach((bar) => {
+            const percent = bar.dataset.percent;
+            bar.style.width = "0%";
+            bar.style.transition = "width 1.6s ease-out";
+
+            setTimeout(() => {
+              bar.style.width = percent + "%";
+            }, 200);
+          });
+        }
+      });
+
+      observer.observe(section);
+    });
+
+    const flyInSections = [
+      { id: "#picprojects", class: "translate-y-10 opacity-0", flyClass: "translate-y-0 opacity-100" },
+      { id: "#piclife", class: "translate-y-10 opacity-0", flyClass: "translate-y-0 opacity-100" },
+      { id: "#txtprojects", class: "translate-y-10 opacity-0", flyClass: "translate-y-0 opacity-100" },
+      { id: "#txtlife", class: "translate-y-10 opacity-0", flyClass: "translate-y-0 opacity-100" }
+    ];
+
+    flyInSections.forEach(({ id, class: initialClass, flyClass }) => {
+      const section = document.querySelector(id);
+      if (section) {
+      section.classList.add(...initialClass.split(" "));
+      section.style.transition = "all 1.2s cubic-bezier(.25,.8,.25,1)";
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+        section.classList.remove(...initialClass.split(" "));
+        section.classList.add(...flyClass.split(" "));
+        observer.disconnect();
+        }
+      }, { threshold: 0.2 });
+      observer.observe(section);
+      }
+    });
+  </script>
+
+
 </body>
 
 </html>
