@@ -1,31 +1,109 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-800 text-white justify-between px-40">
-  <nav>
-    <ul class="flex space-x-4 p-4 my-4 justify-center items-center">
-      <li><a href="#" class="hover:underline text-instrument-sans">Home</a></li>
-      <div class="ml-auto"></div>
-      <li><a href="#" class="hover:underline text-instrument-sans">About</a></li>
-      <li><a href="#" class="hover:underline text-instrument-sans">Services</a></li>
-      <li><a href="#" class="hover:underline text-instrument-sans">Contact</a></li>
-      <li><a href="#" class="hover:underline text-instrument-sans">Contact</a></li>
-    </ul>
-    <div class="w-screen h-[0.5px] bg-white -mx-40"></div>
+
+<body>
+  <nav class="bg-gray-700 bg-opacity-60 backdrop-blur-lg shadow-lg fixed w-full top-0 left-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-3 px-8">
+      <a href="#"
+        class="text-2xl font-extrabold text-white tracking-tight hover:text-blue-600 transition-colors">About</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#projects" class="text-white hover:text-blue-600 font-medium transition-colors">Projects</a>
+        <a href="#" class="text-white hover:text-blue-600 font-medium transition-colors">Skills</a>
+        <a href="#" class="text-white hover:text-blue-600 font-medium transition-colors">Life</a>
+        <a href="#" class="text-white hover:text-blue-600 font-medium transition-colors">Contact</a>
+      </div>
+      <!-- Mobile menu button -->
+      <button class="md:hidden flex items-center text-gray-700 hover:text-blue-600 focus:outline-none"
+        aria-label="Open Menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
   </nav>
   <main>
-    <div class="grid grid-cols-[2fr_1fr] gap-4 mt-10">
-      <div class="p-6 bg-gray-700 rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold mb-4">Welcome to Our Website</h2>
-        <p class="text-gray-300">Discover our services and offerings. We provide top-notch solutions to meet your needs.</p>
+    <section class="min-h-screen flex items-center justify-center bg-cover bg-center bg-opacity-50"
+      style="background-image: url('/images/polska.jpeg');">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 items-center">
+          <!-- Column 1: Text (Left Side) -->
+          <div class="flex flex-col justify-center h-full md:items-start items-center text-center md:text-left">
+            <h1 class="text-4xl font-bold mb-4 text-white">Welcome to My Website</h1>
+            <p class="text-white mb-6">This is a sample website created using Tailwind CSS. It features a responsive
+              layout with a navigation bar and a main content area.</p>
+            <a href="#"
+              class="bg-gray-700 text-white px-8 py-4 rounded-lg hover:bg-gray-800 text-lg font-semibold shadow-md transition-colors w-max">Learn
+              More</a>
+          </div>
+          <!-- Column 2: Picture (Right Side) -->
+          <div class="flex items-center justify-center md:justify-end">
+            <img src="/images/Portrait4.png" alt="Portrait"
+              class="w-80 h-90 object-cover shadow-lg object-[center-10%]">
+          </div>
+        </div>
       </div>
-      <div class="">
-        <img src="/images/Portrait.JPG" alt="Placeholder Image" class="rounded-lg shadow-md">
-    </div>
+    </section>
+    <section id="projects" class="w-full py-12 bg-gray-700 bg-opacity-90 rounded-none">
+      <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Column 1 -->
+        <div>
+        <!-- Text row -->
+        <div class="bg-gray-500 bg-opacity-80 rounded-lg p-6 text-white shadow mb-4">
+          <h2 class="text-xl font-bold mb-2">Project Alpha</h2>
+          <p>Description for Project Alpha.</p>
+        </div>
+        <!-- Project row -->
+        <a href="project1.html" class="block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+          <img src="/images/alpha.png" alt="Project Alpha" class="w-full h-48 object-cover">
+          <div class="p-4">
+          <h3 class="text-lg font-semibold text-white">Project Alpha</h3>
+          </div>
+        </a>
+        </div>
+        <!-- Column 2 -->
+        <div>
+        <!-- Text row -->
+        <div class="bg-gray-500 bg-opacity-80 rounded-lg p-6 text-white shadow mb-4">
+          <h2 class="text-xl font-bold mb-2">Project Beta</h2>
+          <p>Description for Project Beta.</p>
+        </div>
+        <!-- Project row -->
+        <a href="project2.html" class="block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+          <img src="/images/beta.png" alt="Project Beta" class="w-full h-48 object-cover">
+          <div class="p-4">
+          <h3 class="text-lg font-semibold text-white">Project Beta</h3>
+          </div>
+        </a>
+        </div>
+        <!-- Column 3 -->
+        <div>
+        <!-- Text row -->
+        <div class="bg-gray-500 bg-opacity-80 rounded-lg p-6 text-white shadow mb-4">
+          <h2 class="text-xl font-bold mb-2">Project Gamma</h2>
+          <p>Description for Project Gamma.</p>
+        </div>
+        <!-- Project row -->
+        <a href="project3.html" class="block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
+          <img src="/images/gamma.png" alt="Project Gamma" class="w-full h-48 object-cover">
+          <div class="p-4">
+          <h3 class="text-lg font-semibold text-white">Project Gamma</h3>
+          </div>
+        </a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+
+    </section>
   </main>
 </body>
+
 </html>
