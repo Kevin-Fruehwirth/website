@@ -12,14 +12,14 @@
     <div class="container mx-auto flex justify-between items-center py-3 px-15">
       <span class="text-2xl font-playfair text-white tracking-tight">Kevin Frühwirth</span>
       <div class="hidden md:flex space-x-6">
-        <a href="#projects" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Projects</a>
-        <a href="#skills" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Skills</a>
-        <a href="#life" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Life</a>
-        <a href="#contact" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Contact</a>
-        <a href="#about" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">About</a>
+        <a href="#projects" class="text-lg text-white tracking-tight transition-colors">Projects</a>
+        <a href="#skills" class="text-lg text-white tracking-tight transition-colors">Skills</a>
+        <a href="#life" class="text-lg text-white tracking-tight transition-colors">Life</a>
+        <a href="#contact" class="text-lg text-white tracking-tight transition-colors">Contact</a>
+        <a href="#about" class="text-lg text-white tracking-tight transition-colors">About</a>
       </div>
       <!-- Mobile menu button -->
-      <button id="mobile-menu-btn" class="md:hidden flex items-center text-white hover:text-blue-600 focus:outline-none"
+      <button id="mobile-menu-btn" class="md:hidden flex items-center text-white focus:outline-none"
         aria-label="Open Menu">
         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -30,11 +30,11 @@
     <div id="mobile-menu"
       class="md:hidden px-8 pb-4 absolute top-full left-0 w-full bg-neutral-900/90 backdrop-blur-lg shadow-lg transition-all duration-300 opacity-0 pointer-events-none z-40">
       <div class="flex flex-col space-y-2 py-4">
-        <a href="#projects" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Projects</a>
-        <a href="#skills" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Skills</a>
-        <a href="#life" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Life</a>
-        <a href="#contact" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">Contact</a>
-        <a href="#" class="text-lg text-white tracking-tight hover:text-blue-600 transition-colors">About</a>
+        <a href="#projects" class="text-lg text-white tracking-tight transition-colors">Projects</a>
+        <a href="#skills" class="text-lg text-white tracking-tight transition-colors">Skills</a>
+        <a href="#life" class="text-lg text-white tracking-tight transition-colors">Life</a>
+        <a href="#contact" class="text-lg text-white tracking-tight transition-colors">Contact</a>
+        <a href="#" class="text-lg text-white tracking-tight transition-colors">About</a>
       </div>
     </div>
   </nav>
@@ -42,18 +42,17 @@
     <section class="min-h-screen flex items-center justify-center bg-cover bg-center bg-opacity-50"
       style="background-image: url('/images/polska.jpeg');">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-15 items-center">
-          <!-- Column 1: Text (Left Side) -->
-          <div class="flex flex-col justify-center h-full md:items-start items-center text-center md:text-left">
-            <h1 class="text-4xl font-bold mb-4 text-white">Welcome to My Website</h1>
-            <p class="text-white text-2xl mb-6">This is a sample website created using Tailwind CSS. It features a
-              responsive
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-15 items-center">
+          <!-- Column 1: Text (Left Side, 2/3 width on md+) -->
+          <div class="md:col-span-2 flex flex-col justify-center h-full md:items-start items-center text-center md:text-left mt-8 md:mt-0">
+            <h1 class="text-4xl font-bold mb-4 mt-5 md:mt-0 text-white">Welcome to My Website</h1>
+            <p class="text-white text-2xl mb-6">Als Applikationsentwickler mit Erfahrung im Web-Development liebe ich es, digitale Lösungen zu entwickeln,
+               die echten Mehrwert schaffen.
               layout with a navigation bar and a main content area.</p>
-            <a href="#"
-              class="bg-neutral-900/40 backdrop-blur-md text-white px-8 py-4 rounded-lg hover:bg-gray-800 text-lg font-semibold shadow-md transition-colors w-max">Learn
-              More</a>
+            <a href="/docs/Fruehwirth_Kevin_CV.pdf" download
+              class="bg-neutral-900/40 backdrop-blur-md text-white px-8 py-4 rounded-lg hover:bg-gray-800 text-lg font-semibold shadow-md transition-colors w-max">Download CV</a>
           </div>
-          <!-- Column 2: Picture (Right Side) -->
+          <!-- Column 2: Picture (Right Side, 1/3 width on md+) -->
           <div class="flex items-center justify-center md:justify-end">
             <img src="/images/Portrait4.png" alt="Portrait"
               class="w-80 h-90 object-cover shadow-lg object-[center-10%]">
@@ -69,7 +68,7 @@
           <div>
             <a href="project1.html"
               class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
-              <img src="/images/Foto.jpeg" alt="Website Esperanza de Vida" class="w-full h-80 object-cover">
+              <img src="/images/esperanzadevida.jpg" alt="Website Esperanza de Vida" class="w-full h-80 object-cover">
               <div class="absolute inset-0 flex items-center justify-center">
                 <span
                   class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
@@ -110,38 +109,38 @@
     </section>
     <section id="skills" class="w-full py-12 bg-[#1A1526] bg-opacity-90 rounded-none">
       <div class="max-w-7xl mx-auto px-15">
-      <div class="grid md:grid-cols-2 md:gap-8 gap-4">
-        <!-- Left Column -->
-        <div class="flex flex-col md:gap-6 gap-4">
-        <div>
-          <span class="text-white">JavaScript</span>
-          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
-          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="80" style="width: 0%"></div>
+        <div class="grid md:grid-cols-1 md:grid-cols-2 md:gap-8 gap-6">
+          <!-- Left Column -->
+          <div>
+            <div class="mb-6">
+              <span class="text-white">JavaScript</span>
+              <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="80" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <span class="text-white">React</span>
+              <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="70" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div>
+            <div class="mb-6">
+              <span class="text-white">Photography</span>
+              <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="90" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <span class="text-white">Photography</span>
+              <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="90" style="width: 0%"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <span class="text-white">React</span>
-          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
-          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="70" style="width: 0%"></div>
-          </div>
-        </div>
-        </div>
-        <!-- Right Column -->
-        <div class="flex flex-col md:gap-6 gap-4">
-        <div>
-          <span class="text-white">Photography</span>
-          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
-          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="90" style="width: 0%"></div>
-          </div>
-        </div>
-        <div>
-          <span class="text-white">Photography</span>
-          <div class="w-full bg-gray-200 rounded-full h-3 mt-2">
-          <div class="skill-bar bg-blue-500 h-3 rounded-full" data-percent="90" style="width: 0%"></div>
-          </div>
-        </div>
-        </div>
-      </div>
       </div>
     </section>
     <section id="life" class="w-full py-12 bg-[#231B2E] bg-opacity-90 rounded-none">
@@ -150,7 +149,7 @@
         <div id="piclife" class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Column 1 -->
           <div>
-            <a href="project1.html"
+            <a href="photography.html"
               class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
               <img src="/images/Foto.jpeg" alt="Fotografie und Reisen" class="w-full h-80 object-cover">
               <div class="absolute inset-0 flex items-center justify-center">
@@ -165,7 +164,7 @@
           <div>
             <a href="project2.html"
               class="relative block bg-gray-500 bg-opacity-80 rounded-lg shadow hover:shadow-xl transition-shadow overflow-hidden">
-              <img src="/images/beta.png" alt="Kirchliches Engagement" class="w-full h-80 object-cover">
+              <img src="/images/" alt="Kirchliches Engagement" class="w-full h-80 object-cover">
               <div class="absolute inset-0 flex items-center justify-center">
                 <span
                   class="text-xl text-white font-semibold font-playfair bg-neutral-900/40 backdrop-blur-sm shadow-lg px-4 py-2 rounded">
@@ -195,26 +194,8 @@
       <div class="max-w-7xl mx-auto px-15 text-center">
         <h2 class="text-3xl mb-6 text-white">Contact Me</h2>
         <p class="text-white mb-6">Feel free to reach out for collaborations or just a friendly hello!</p>
-        <form action="mailto:Kevin.fru@icloud.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto bg-neutral-800/40 backdrop-blur-md p-8 rounded-lg shadow-lg">
-          <div class="mb-4 text-left">
-            <label for="name" class="block text-white mb-2">Name</label>
-            <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded bg-neutral-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
-          <div class="mb-4 text-white text-left">
-            <label for="email" class="block text-white mb-2">Email</label>
-            <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded bg-neutral-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
-          <div class="mb-4 text-white text-left">
-            <label for="message" class="block text-white mb-2">Message</label>
-            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded bg-neutral-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-          </div>
-          <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors w-full font-semibold">Send Message</button>
-        </form>
-        <div class="mt-8">
-          <a href="mailto:Kevin.fru@icloud.com"
-            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-block">Email Me</a>
-        </div>
-      </div>
+        <a href="mailto:Kevin.fru@icloud.com" class="bg-neutral-900/40 backdrop-blur-md backdrop-blur-lg shadow-lg text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors inline-block">Email Me</a>
+      </div> 
     </section>
   </main>
 
